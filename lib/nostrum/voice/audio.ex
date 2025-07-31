@@ -229,8 +229,8 @@ defmodule Nostrum.Voice.Audio do
           ffmpeg_options(options, input_url),
           ["-ac", "2"],
           ["-ar", "48000"],
-          ["-f", "s16le"],
-          ["-loglevel", "debug"],
+          ["-f", "libopus"],
+          ["-loglevel", "quiet"],
           ["pipe:1"]
         ]
         |> List.flatten(),
