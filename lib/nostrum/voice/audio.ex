@@ -230,7 +230,7 @@ defmodule Nostrum.Voice.Audio do
           ["-ac", "2"],
           ["-ar", "48000"],
           ["-f", "s16le"],
-          ["-loglevel", "quiet"],
+          ["-loglevel", "debug"],
           ["pipe:1"]
         ]
         |> List.flatten(),
