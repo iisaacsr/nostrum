@@ -229,9 +229,7 @@ defmodule Nostrum.Voice.Audio do
           ffmpeg_options(options, input_url),
           ["-ac", "2"],
           ["-ar", "48000"],
-          ["-f", "data"],
-          ["-map", "0:a"],
-          ["-acodec", "libopus"],
+          ["-f", "s16le"],
           ["-loglevel", "quiet"],
           ["pipe:1"]
         ]
